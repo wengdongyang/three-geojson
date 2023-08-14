@@ -1,0 +1,32 @@
+/* 区域名称 */
+.area-name {
+  font-size: 12px;
+
+  pointer-events: none !important;
+
+  color: #caf3ff;
+  font-weight: lighter;
+}
+/* 点位 */
+// 特殊处理左下角
+.point-layout {
+  width: 150px;
+  pointer-events: none !important;
+  .point-container {
+    width: 150px;
+    display: flex;
+
+    transform: translateX(50%);
+
+    .point-image {
+      width: 40px;
+      height: 40px;
+      margin-right: 6px;
+      pointer-events: auto;
+    }
+    .point-name {
+      color: white;
+      text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
